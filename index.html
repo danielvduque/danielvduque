@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Duque</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff; /* Set your desired default background color */
+            color: #000000; /* Set your desired default text color */
+        }
+
+        #profile-picture {
+            border-radius: 50%;
+            width: 200px; /* Set your desired width for the profile picture */
+            height: 200px; /* Set your desired height for the profile picture */
+        }
+
+        #title {
+            font-size: 2.5em; /* Adjust as needed */
+            font-weight: bold;
+            margin-top: 20px; /* Adjust as needed */
+            margin-left: 1em; /* Left margin */
+            margin-right: 1em; /* Right margin */
+        }
+
+        #text {
+            font-size: 1.5em; /* Adjust as needed */
+            margin-top: 20px; /* Adjust as needed */
+            margin-left: 1em; /* Left margin */
+            margin-right: 1em; /* Right margin */
+        }
+
+        .highlight {
+            background-color: #000000; /* Set your desired background color for highlighted text */
+            color: #ffffff; /* Set your desired text color for highlighted text */
+        }
+
+        #links-section {
+            font-size: 1.5em; /* Adjust as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Adjust as needed */
+            /* Add any additional styles for the links section */
+        }
+
+        #links-section-text {
+            margin-bottom: 10px; /* Adjust as needed */
+            /* Add any additional styles for the text before the links */
+        }
+
+        #links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        #links a {
+            text-decoration: none;
+            color: #000000;
+            margin-right: 0.5em;
+        }
+
+        #linkedin-logo,
+        #github-logo {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <img id="profile-picture" src="./img/profile.png" alt="Profile Picture">
+    <div id="title">Hey, I am Daniel, a Software Engineer</div>
+    <div id="text">
+        <p>I have ten years of experience in software development. Throughout this period, I have actively participated in various industries including ecommerce (retail, B2C, B2B)</p>
+        <p>I am based in Madrid, Spain, and I am open to working either remotely or onsite</p>
+    </div>
+    <div id="links-section">
+        <p id="links-section-text">If you have any question you can find me in:</p>
+        <div id="links">
+            <a target="_blank" href="#"><img id="linkedin-logo" src="./img/linkedin.png" alt="LinkedIn"> LinkedIn</a>
+            <a target="_blank" href="#"><img id="github-logo" src="./img/github.png" alt="GitHub"> Github </a>
+        </div>
+    </div>
+</body>
+</html>
