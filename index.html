@@ -3,26 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Duque</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Daniel Duque - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="light-theme">
-    <img id="profile-picture" src="https://avatars.githubusercontent.com/u/7783609" alt="Profile Picture">
-    <div id="title">Hey, I am Daniel and I am a Software Engineer.</div>
-    <div id="text">
-        <p>I have ten years of experience in software development. Throughout this period, I have actively participated in various industries including ecommerce (retail, B2C, B2B), contributing as a valuable member of diverse multidisciplinary teams for different Latin American companies.</p>
-        <p>My goal is to consistently deliver high-quality, clean and efficient solutions that people can truly use to enhance their daily lives.</p>
-        <p>I am based in Madrid, Spain and I am open to working both remotely and onsite.</p>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-image">
+                <img src="https://avatars.githubusercontent.com/u/7783609" alt="Daniel Duque - Software Engineer">
+            </div>
+            
+            <h1 class="main-title">
+                Hey, I'm Daniel and I'm a <br/><span class="highlight">Software Engineer</span>
+            </h1>
+            
+            <div class="location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Madrid, Spain • Open to remote and onsite work</span>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="card about-section">
+            <div class="card-content">
+                <p class="about-text">
+                    I have <strong>ten years of experience</strong> in software development. Throughout this period, I have
+                    actively participated in various industries including <strong>ecommerce</strong> (retail, B2C, B2B),
+                    contributing as a valuable member of diverse multidisciplinary teams for different Latin American
+                    companies.
+                </p>
+                
+                <p class="about-text">
+                    My goal is to consistently deliver <strong>high-quality, clean and efficient solutions</strong> that
+                    people can truly use to enhance their daily lives.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon blue">💻</div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building complete web applications from frontend to backend</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon green">🛒</div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Specialized in retail, B2C, and B2B platforms</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon purple">🌎</div>
+                    <h3>International Experience</h3>
+                    <p>Working with diverse teams across Latin America</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card contact-section">
+            <div class="card-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-description">
+                    If you have any questions or would like to discuss potential opportunities, feel free to reach out
+                    through any of these platforms:
+                </p>
+                
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/danielvduque" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    
+                    <a href="https://github.com/danielvduque" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    
+                    <a href="mailto:daniel@danielvduque.com" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Daniel Duque. All rights reserved.</p>
+        </footer>
     </div>
-    <div id="links-section">
-        <p id="links-section-text">If you have any question you can find me on:</p>
-        <div id="links">
-            <a target="_blank" href="https://www.linkedin.com/in/danielvduque/"><img id="linkedin-logo" src="./img/linkedin.png" alt="LinkedIn"> LinkedIn</a>
-            <a target="_blank" href="https://github.com/danielvduque"><img id="github-logo" src="./img/github.png" alt="GitHub"> Github </a>
-        </div>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSE0YY9VYK"></script>
